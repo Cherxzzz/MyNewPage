@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My Programming Challenge - Home </title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="icon" type="image/svg" href="./Media/bx-book-heart.svg"/>
+    <script src="Scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="menubar">
+            <h1 class="title"> My programming Challenges Page </h1>
+            <div class="mainmenu">
+                <ul>
+                    <a href="./MyfirstProject.html">
+                          <li> Home </li>
+                     </a>
+                    <li> Challenges </li>
+                    <a href="./Contribute.html">
+                        <li>  Contribute to the crew </li>
+                    </a>
+                    <li> <button onclick="location.href='./Login.html'"> Sign in </button></li>
+                    <a href="./Login.html">
+                    </a>
+                </ul>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="bannertext">
+                    <div class="banner">
+                        <h2 class="banner"> Welcome to your Programming Fundamentals Page</h2>
+                        <p class="banner"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero ex omnis fugiat, rerum molestiae
+                            deleniti officia dolor quidem sequi neque doloribus minima sed dolore. Nemo incidunt debitis totam
+                            possimus adipisci!</p>
+                    </div>
+                   
+                        <div class="banner">
+                            <ul>
+                            <li> <button> Visit Database </button> </li>
+                            <li> <button> Meet the Crew </button> </li>
+                        </ul>
+                        </div>
+            </div>
+        <div class="banner">
+            <img class="bannerimg" alt="Technology" src="./Media/Technology.png"> 
+        </div>
+
+
+        </div>
+        <div style="text-align:center" >
+            <h1> Our programming Database</h1>
+            <div class="greatcontainer">
+                <div class="card">
+                    <img class="flowchart" alt="Flowchart" src="./Media/Employees flowchart 1.png" /> 
+                    <h5 class="flowtitle"> Employees salary problem</h5>
+                    <p class="flowchartext"> An employee needs to calculate his/her weekly salary. You can obtain this salary calculating:
+                    <br>
+                    If works 40 hours or less, will earn $16 per hour.</br> 
+                    If works more that $40 per hour for first 40 hours and $20 for each extra hour </p>
+                    <button class="button" onclick="location.href= './Media/Employees flowchart 1.png'"> Watch the flowchart</button>
+            
+                </div>
+                <div class="card">
+                    <img class="flowchart" alt="Flowchart2" src="./Media/Quiz Multiplication with additions flowchart.png" />
+                    <h5 class="flowtitle"> Multiplication with additions</h5>
+                    <p class="flowchartext"> Do an algorithm that can calculate the multiplication of two numbers without using the multiplication operator (using additions).
+                     </p>
+                    <button class="button" onclick="location.href='./Media/Quiz Multiplication with additions flowchart.png'"> Watch the flowchart</button>
+            
+                </div>
+                <div class="card">
+                    <img class="flowchart" alt="Flowchart3" src="./Media/Flowchart3.png" />
+                    <h5 class="flowtitle"> Testing programming skills in Flowchart</h5>
+                    <p class="flowchartext"> A restaurant offers a discount of 10% if the client consumes until $100 in products and a discount of 20% for higher consumes. For both cases, the tax percentage is 12%.
+                    <br>
+                    Do a flowchart that can determine the discount value, the tax value and total price.</br> 
+                    </p>
+                    <button class="button" onclick="location.href='./Media/Flowchart3.png'"> Watch the flowchart</button>
+            
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let random=Math.floor(Math.random()*100);
+        </script>
+        <div class="suscribe">
+            <h2 class="crewtitle"> An additional challenge for you!</h2>
+            <label for="number">Type a number between 0 and 100. Try to guess the number!</label>
+            <form action="javascript:guessNumber(number.value, random)"method="post"> 
+                <input type="number" id="number" name="number">
+                <input class="suscribebutton" type="submit" name="guess" value="Guess now!">
+            </form>
+            <p id="answer"></p>
+
+        </div>
+
+        <div style="text-align:center">
+            <h1> Meet our Crew</h1>
+            <div> 
+                <img width="300px" alt="crewimg" src="./Media/download20230701181101.png">
+                <h3> Catalina Garcia</h3>
+                <h4> Student </h4>
+
+            </div>
+        </div>
+        <div style="text-align:center">
+            <h1> Contribute to the project </h1>
+            <button class="button" onclick="location.href='./Contribute.html'"> More information here </button></li>
+            <a href="./Contribute.html">
+            </a>
+        </div>
+        <div class="suscribe">
+            <h2 class="crewtitle"> Do you want more information about the project</h2>
+            <h4 style="text-align: center;"> Type your mail to receive more notifications weekly</h4>
+            <form action="javascript:sendMail(name.value)" method="post">
+                <input type="email" name="email" placeholder="example@mail.com"/>
+               <input class="suscribebutton" type="submit" name="sendsuscribe" value="send"/>
+            </form>
+            <div class="mailconfirmation"><p id="mailsuccess"></p></div>
+        </div>
+
+        <footer>
+        
+        </footer>
+    </main>
+</body>
+
+</html>
