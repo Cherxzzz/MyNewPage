@@ -7,12 +7,7 @@ body{
 }
 
 .menubar{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px 0;
+    display: inline-block;
 }
 
 .mainmenu{
@@ -20,7 +15,9 @@ body{
 }
 
 .title{
-    text-align: center;
+    display: inline-block;
+    padding-right: 300px;
+    padding-left: 10px;
     color: darkslateblue;
 }
 
@@ -30,6 +27,7 @@ ul li{
     padding-right: 40px;
     color: darkslateblue;
 }
+
 
 a{
 text-decoration: none;
@@ -60,6 +58,7 @@ header{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1%;
+    padding-left: 150px;
 }
 
 
